@@ -1,4 +1,5 @@
 import React from 'react'
+import CodePush from 'react-native-code-push'
 
 import { NavigationContainer } from '@react-navigation/native'
 import { Platform, StatusBar } from 'react-native'
@@ -31,4 +32,15 @@ function App() {
   )
 }
 
-export default App
+const codePushOptions = {
+  updateDialog: {
+    mandatoryUpdateMessage: '필수 업데이트가 존재합니다.',
+    mandatoryContinueButtonLabel: '계속',
+    title: '업데이트',
+    optionalUpdateMessage: '업데이트 하시겠습니까?',
+    optionalInstallButtonLabel: '업데이트',
+    optionalIgnoreButtonLabel: '취소',
+  },
+}
+
+export default CodePush(codePushOptions)(App)
