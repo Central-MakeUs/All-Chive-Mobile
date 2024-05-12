@@ -42,6 +42,7 @@
     "react-i18next": "^13.0.1",
     "react-native": "0.71.11",
     "react-native-blob-util": "^0.19.1",
+    "react-native-code-push": "^8.2.2",
     "react-native-config": "^1.5.1",
     "react-native-device-info": "^10.8.0",
     "react-native-document-picker": "^9.0.1",
